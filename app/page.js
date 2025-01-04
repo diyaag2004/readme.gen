@@ -145,6 +145,13 @@ export default function Home() {
       )}
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Diya Agrawal. All rights reserved🐼.</p>
+        <p>
+        Connect with me on{' '}
+        <a href="https://www.linkedin.com/in/diya-agrawal-nitp/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </p>
+
       </footer>
     </div>
   );
