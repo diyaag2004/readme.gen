@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Poppins", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  background-image: url("/bg.jpg");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.335);
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.595);
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+/* Input Field */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #496ec4;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fcfeff;
+  color: #838282;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2357b0;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  width: 48%;
+  align-items: center;
+  background-color: #3d63a5;
+  text-align: center;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #b3d9ff;
+  color: #496ec4;
+  border-style: double;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #e4e4e4;
+  cursor: not-allowed;
+  color: #a3a3a3;
+}
+
+.flex-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+/* Error Message */
+.error {
+  color: #ff6f61;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3e3fc; /* Pastel scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a6c1ee;
+}
